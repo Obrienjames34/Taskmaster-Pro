@@ -78,8 +78,10 @@ $("#task-form-modal .btn-primary").click(function() {
       date: taskDate
     });
 
-    saveTasks()(".list-group").on("click", "p", function() {
-      console.log("this");
+    $(".list-group").on("click", "p", function() {
+      var text = $(this)
+      .text()
+      .trim()
     });
   }
 });
