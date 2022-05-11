@@ -82,8 +82,9 @@ $("#task-form-modal .btn-primary").click(function() {
       var text = $("this")
       .text() 
       var textInput = $("<textarea>")
+      $(this).replaceWith(textInput)
       .addClass("form-control")
-      .val(text);
+      .val(text)
       .trim()
     });
   }
