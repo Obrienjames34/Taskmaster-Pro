@@ -79,8 +79,11 @@ $("#task-form-modal .btn-primary").click(function() {
     });
 
     $(".list-group").on("click", "p", function() {
-      var text = $(this)
-      .text()
+      var text = $("this")
+      .text() 
+      var textInput = $("<textarea>")
+      .addClass("form-control")
+      .val(text);
       .trim()
     });
   }
