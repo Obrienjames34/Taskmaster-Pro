@@ -78,7 +78,9 @@ $("#task-form-modal .btn-primary").click(function() {
       date: taskDate
     });
 
-    saveTasks();
+    saveTasks()(".list-group").on("click", "p", function() {
+      console.log("this");
+    });
   }
 });
 
